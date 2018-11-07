@@ -1,0 +1,196 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.1 (9/2/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+\usepackage{xcolor}
+\hypersetup{
+    colorlinks,
+    linkcolor={red!50!black},
+    citecolor={blue!50!black},
+    urlcolor={blue!80!black}
+}
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{Anqi}{Lu}{Full Stack Software Engineer} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{contact}
+Shanghai, China
+~
++86 138 1641 2974
+~
+\href{mailto:marine.luanqi@gmail.com}{marine.luanqi@gmail.com}
+~
+\href{https://github.com/anqilu}{github.com/anqilu}
+\href{https://www.linkedin.com/in/anqilu}{linkedin.com/in/anqilu}
+\section{languages}
+chinese mother tongue
+english fluency
+spanish basic
+\section{programming languages}
+{\color{red} $\varheartsuit$} Python
+JavaScript
+GO, JAVA
+\section{web frameworks}
+Flask
+React (Redux)
+\section{databases}
+MySQL
+MongoDB
+Redis
+\section{ide}
+PyCharm
+WebStorm
+\section{editors}
+Vim
+\end{aside}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{work}
+
+\begin{entrylist}
+
+	%------------------------------------------------
+	\entry
+	{Present}
+	{2017.Oct}
+	{Shukun Tech}
+	{Shanghai, China}
+	{\emph{Full Stack Developer}
+		\begin{itemize}
+			\item Responsible for a medical product, which processes cardiovascular CT data, analyzes, and diagnoses for doctors.
+			\item Developed various internal supporting platforms, including image annotation platform and data management platform.
+			\item Responsible for middleware and common library development(e.g. task queue, image processing fabric, annotation component).
+			\item Daily operation and maintenance for online services.
+		\end{itemize}
+	}
+	%------------------------------------------------
+	
+	\entry
+	{2017.Sep}
+	{2017.Apr}
+	{ELEME}
+	{Shanghai, China}
+	{\emph{Senior Software Engineer}
+		\begin{itemize}
+			\item Independently designed, developed and launched the Liability Judgment Service, which is a high-traffic service on critical path of the whole business.
+			\item In charge of feature development and regular system refactor of Order Termination Service (e.g. cancellation, refunding).
+		\end{itemize}
+	}
+	%------------------------------------------------
+	
+	\entry
+	{2017.Mar}
+	{2015.Nov}
+	{IBM}
+	{Shanghai, China}
+	{\emph{CDL Software Developer}
+		\begin{itemize}
+		   \item Participated in RDO Enablement on PPC64 project, involved in core components enablement, high availability, and developed integrated pipeline solution for OpenStack deployment.
+			\item Developed and maintained Pure Power Integrated Manager with Python and Dojo, taking part in VirtualMachine Management module.
+			\item Participated in POC project Heimdallr, used for monitoring on Power, taking part in data capture and visualization.
+		\end{itemize}
+	}
+	%------------------------------------------------
+	
+	\entry
+	{2014.Jul}
+	{2014.Jan}
+	{EMC\textsuperscript{2}}
+	{Shanghai, China}
+	{\emph{Software Engineer Intern}
+		\begin{itemize}
+			\item Developed and maintained Lab Management System II with CakePHP.
+			\item Developed web applications supporting lab users.
+		\end{itemize}
+	}
+	%------------------------------------------------
+	
+	\entry
+	{2013.Dec}
+	{2013.Jan}
+	{Shanghai Zhongyan Network Tech}
+	{Shanghai, China}
+	{\emph{Software Engineer Intern}
+		\begin{itemize}
+			\item Developed survey systems in Django.
+			\item Processed survey data with NumPy and PANDAS.
+		\end{itemize}
+	}
+	%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{education}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{2015.Nov}
+{2014.Sep}
+{University of Edinburgh}
+{Edinburgh, United Kingdom}
+{
+	\emph{Master of Computer Science}
+	\begin{itemize}
+		\item Graduated with Distinction.
+		\item GPA: 3.75/4.0
+		\item Course Work: Advanced Databases; Distributed Systems; Extreme Computing; Information Theory; Introduction to Java Programming; Parallel Programming Languages and Systems; Semantic Web Systems; Software Architecture, Process, and Management
+	\end{itemize}
+	%{\color{red} $\vardiamondsuit$}Thesis: A profiling mechanism for dispel4py. This infrastructure is made up of Profiling Framework and Performance Database. Workflows characteristics are captured, stored, managed and analyzed to improve the efficiency of future workflow instances. \\
+	%{\color{red} $\vardiamondsuit$}Research Review: GA-Based Task Scheduling Algorithms in Cloud Computing. This paper introduced optimized task scheduling mechanism, based on standard Genetic Algorithm, and reviewed how they improved performance. \\
+}
+
+%------------------------------------------------
+\entry
+{2014.Jun}
+{2010.Sep}
+{Shanghai University of Finance and Economics}
+{Shanghai, China}
+{
+	\emph{Bachelor of E-Commerce}\\
+	GPA: 3.38/4.0
+	%{\color{red} $\vardiamondsuit$}Course Work:
+	%Advanced Algebra; Advanced Mathematics; Basic of Program Design(C/C++); Comprehensive and Designing Experiments(Windows App/ Web App); Computer Network; Database; Data Structure; Discrete Mathematics; Object-Oriented Program Design(Java); Operations Research; Probability Theory and Statistics
+}
+%------------------------------------------------
+\end{entrylist}
+
+%%----------------------------------------------------------------------------------------
+%%	PUBLICATIONS SECTION
+%%----------------------------------------------------------------------------------------
+%
+\section{publications}
+
+\printbibsection{patent} % Print all patents from the bibliography
+
+\end{document}
