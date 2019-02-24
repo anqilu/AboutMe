@@ -1,0 +1,182 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Friggeri Resume/CV
+% XeLaTeX Template
+% Version 1.1 (9/2/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Adrien Friggeri (adrien@friggeri.net)
+% https://github.com/afriggeri/CV
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important notes:
+% This template needs to be compiled with XeLaTeX and the bibliography, if used,
+% needs to be compiled with biber rather than bibtex.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{friggeri-cv-cn} % Add 'print' as an option into the square bracket to remove colors from this template for printing
+
+
+\addbibresource{bibliography.bib} % Specify the bibliography file to include publications
+
+\begin{document}
+
+\header{卢}{安琪}{全栈软件工程师} % Your name and current job title/field
+
+%----------------------------------------------------------------------------------------
+%	SIDEBAR SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{aside} % In the aside, each new line forces a line break
+\section{联系方式}
+上海市
+~
++86 138 1641 2974
+~
+\href{mailto:marine.luanqi@gmail.com}{marine.luanqi@gmail.com}
+~
+\href{https://www.linkedin.com/in/anqilu}{linkedin.com/in/anqilu}
+\section{语言}
+中文 母语
+英语 IELTS 7.5
+\section{programming languages}
+{\color{red} $\varheartsuit$} Python
+JavaScript
+GO, JAVA
+\section{web frameworks}
+Flask
+React (Redux)
+\section{databases}
+MySQL
+MongoDB
+Redis
+\section{ide}
+PyCharm
+WebStorm
+\section{editors}
+Vim
+\end{aside}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{工作经验}
+
+\begin{entrylist}
+%------------------------------------------------
+\entry
+	{目前}
+	{2017. 10}
+	{数坤(北京)网络科技有限公司}
+	{上海，中国}
+	{\emph{全栈软件工程师}
+		\begin{itemize}
+			\item 参与冠脉诊断医疗软件完整的研发周期。该软件处理冠脉CT图像、分析数据、并为医生生成智能诊断报告。
+			\item 参与开发一系列内部支持工具，包括图像标注平台与数据管理平台。
+			\item 负责中间件与通用组件的开发（例如：任务队列，图像处理组件，标注组件）。
+			\item 线上服务的日常运维。
+		\end{itemize}
+	}
+%------------------------------------------------
+\entry
+	{2017.09}
+	{2017.04}
+	{饿了么}
+	{上海，中国}
+	{\emph{高级软件工程师}
+		\begin{itemize}
+			\item 独立设计、研发并首发判责服务。该服务并发流量高，处于整个订单业务的关键路径上。
+			\item 负责订单终止服务（包括售中异常服务与退款服务）的新功能开发与技术改造。
+		\end{itemize}
+	}
+%------------------------------------------------
+\entry
+	{2017.03}
+	{2015.11}
+	{IBM}
+	{上海，中国}
+	{\emph{软件工程师}
+		\begin{itemize}
+		   \item 参与RDO在PPC64架构上的解决方案。主要负责核心组件的移植，高可用性（HA）以及自动化部署OpenStack。
+			\item 开发并维护PPIM (Pure Power Integrated Manager)。负责VirtualMachine管理模块。
+			\item 参加POC项目Heimdallr，用于Power机器的性能监控，负责系统性能数据捕获与可视化。
+		\end{itemize}
+	}
+%------------------------------------------------
+\\
+	\entry
+	{2014.07}
+	{2014.01}
+	{EMC\textsuperscript{2}}
+	{上海，中国}
+	{\emph{软件工程师实习生}
+		\begin{itemize}
+			\item 基于CakePHP，开发与维护LMS2 (实验室管理系统II)。
+			\item 开发网络应用，支持实验室用户的特定需求。
+		\end{itemize}
+	}
+%------------------------------------------------
+\\
+	\entry
+	{2013.12}
+	{2013.01}
+	{上海众言网络科技有限公司}
+	{上海，中国}
+	{\emph{软件工程师实习生}
+		\begin{itemize}
+			\item 基于Django，开发问卷调研系统。
+			\item 使用NumPy和PANDAS，处理调研数据。
+		\end{itemize}
+	}
+%------------------------------------------------
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{教育背景}
+
+\begin{entrylist}
+\entry
+{2015.11}
+{2014.09}
+{爱丁堡大学}
+{爱丁堡, 英国}
+{
+	\emph{计算机科学硕士学位}
+	\begin{itemize}
+		\item 一等学位毕业生
+		\item GPA: 3.75/4.0
+		\item 主要课程：高级数据库；分布式系统；极限计算；信息论；Java编程；并行编程语言及系统；语义型网络系统；软件开发架构、流程及管理
+	\end{itemize}
+}
+%------------------------------------------------
+\entry
+{2014.06}
+{2010.09}
+{上海财经大学}
+{上海，中国}
+{
+	\emph{电子商务学士学位}\\
+	GPA: 3.38/4.0
+}
+%------------------------------------------------
+\end{entrylist}
+
+%%----------------------------------------------------------------------------------------
+%%	PUBLICATIONS SECTION
+%%----------------------------------------------------------------------------------------
+%
+\section{发表专利}
+
+\printbibsection{patent} % Print all patents from the bibliography
+
+%----------------------------------------------------------------------------------------
+\end{document}

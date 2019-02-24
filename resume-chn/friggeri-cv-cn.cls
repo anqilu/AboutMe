@@ -46,16 +46,15 @@
 %%%%%%%%%
 % Fonts %
 %%%%%%%%%
-
-\RequirePackage[quiet]{fontspec}
+\RequirePackage{xeCJK}
 \RequirePackage{unicode-math}
 
-\newfontfamily\bodyfont[]{Helvetica Neue}
-\newfontfamily\thinfont[]{Helvetica Neue UltraLight}
-\newfontfamily\headingfont[]{Helvetica Neue Condensed Bold}
+\newCJKfontfamily\bodyfont[]{PingFang SC}
+\newCJKfontfamily\thinfont[]{PingFang SC}
+\newCJKfontfamily\headingfont[]{PingFang SC}
 
-\defaultfontfeatures{Mapping=tex-text}
-\setmainfont[Mapping=tex-text, Color=textcolor]{Helvetica Neue Light}
+%\defaultCJKfontfeatures{Mapping=tex-text}
+\setCJKmainfont[Color=textcolor]{PingFang SC}
 
 %\setmathfont{XITS Math}
 
@@ -94,7 +93,7 @@
 \RequirePackage{parskip}
 
 \newcounter{colorCounter}
-\def\@sectioncolor#1#2#3{%
+\def\@sectioncolor#1#2{%
   {%
     \color{%
       \ifcase\value{colorCounter}%
@@ -105,7 +104,7 @@
         purple\or%
         brown\else%
         headercolor\fi%
-    } #1#2#3%
+    } #1#2%
   }%
   \stepcounter{colorCounter}%
 }
